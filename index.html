@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 role="heading" aria-level="1">Tech Quiz 🧠</h1>
+
+        <div id="subject-selection" role="region" aria-label="Subject Selection">
+            <h2>Select a Subject</h2>
+            <div class="button-grid">
+                <button onclick="startQuiz('os')">Operating Systems</button>
+                <button onclick="startQuiz('networks')">Computer Networks</button>
+                <button onclick="startQuiz('dbms')">DBMS</button>
+                <button onclick="startQuiz('software')">Software Engineering</button>
+                <button onclick="startQuiz('dsa')">Data Structures</button>
+                <button onclick="startQuiz('web')">Web Technologies</button>
+            </div>
+        </div>
+
+        <div id="quiz-container" style="display: none;" role="region" aria-label="Quiz Area">
+            <h2 id="subject-title"></h2>
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <footer>
+        Made by Sowmya
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
